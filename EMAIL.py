@@ -15,6 +15,8 @@ subject:
     https://github.com/PyAbdusalom/Module_4_exam.git
     
     docker pull pyabdusalom/4_module_exam_img:latest
+    
+    docker compose file git.hubda bor
 """.format(sender, receiver)
 
 with smtplib.SMTP_SSL(server, port) as server:
