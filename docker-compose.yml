@@ -1,0 +1,13 @@
+version: '3.11'
+
+
+services:
+  bot:
+    build:
+      dockerfile: /home/abdusalom/pdp/Module_4_exam/DockerFile
+    restart: always
+    working_dir: /app
+    environment:
+      TOKEN: ${TOKEN}
+    container_name: module_4_exam_bot
+    command: python Telegram_bot.py
